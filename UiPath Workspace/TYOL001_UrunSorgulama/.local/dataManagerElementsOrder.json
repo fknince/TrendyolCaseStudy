@@ -1,0 +1,254 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strRunningReportPath&Sequence_42",
+        "ShouldStop&Sequence_25",
+        "strProductURL&State_3",
+        "strWSSubcategory&State_3",
+        "strTrendyolSubcategory&State_3",
+        "strCategorySimilarityPercentage&State_3",
+        "strProductName&State_3",
+        "strProductBrand&State_3",
+        "strProductSeller&State_3",
+        "strReviewsCount&State_3",
+        "strProductNormalPrice&State_3",
+        "strProductSalesPrice&State_3",
+        "strProductAverageScore&State_3",
+        "strDiscountRate&State_3",
+        "strProductOffers&State_3",
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "brwChromeBrowser&StateMachine_1",
+        "dtReportData&StateMachine_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Background/GetSubCategoriesViaWS.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jarrResponseContent&Sequence_4",
+        "strResponseContent&Sequence_2",
+        "intResponseStatus&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_arrSubCategories",
+        "in_strEndpointURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Foreground/GetSubCategoriesFromTrendyol.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtSubcategories",
+        "in_strTrendyolHomeURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strTest&Sequence_3",
+        "ExtractDataTable&Sequence_1",
+        "intPageDownCounter&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Background/CalculateTwoTextSimilarity.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_intPercentageScore",
+        "in_strSecondText",
+        "in_strFirstText"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Foreground/GetProductsURLFromTrendyol.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtExtractedProductData&Sequence_6",
+        "intPageCounter&Sequence_1",
+        "strTemplateURL&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSubcategoryURL",
+        "in_strSubcategoryName",
+        "out_dtProductList",
+        "in_intMaxPageCount"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/FillOrchestratorQueue.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtProductList&Sequence_7",
+        "strDetectedCategoryURL&Sequence_2",
+        "strDetectedCategoryName&Sequence_2",
+        "intPercentageScore&Sequence_2",
+        "intMaxSimilarityScore&Sequence_2",
+        "arrSubCategories&Sequence_2",
+        "dtSubcategories&Sequence_2",
+        "dtTransactionList&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intMaxPageCount",
+        "in_intSimilarityScoreLimit",
+        "in_strTrendyolHomeURL",
+        "in_strEndpointURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Foreground/ExtractProductDetailsFromTrendyol.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtProductCampaigns&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strWSSubcategory",
+        "in_strTrendyolSubcategory",
+        "in_strCategorySimilarityPercentage",
+        "inOut_dtReportData",
+        "in_BusinessException",
+        "in_SystemException",
+        "in_strProductName",
+        "in_strProductBrand",
+        "in_strProductSeller",
+        "in_strReviewsCount",
+        "in_strProductNormalPrice",
+        "in_strProductSalesPrice",
+        "in_strProductAverageScore",
+        "in_strDiscountRate",
+        "in_strProductOffers",
+        "in_strProductURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Background/TransactionValidations.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSubcategorySimilarityLimit",
+        "in_strCategorySimilarityPercentage"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strCategorySimilarityPercentage",
+        "in_strSubcategorySimilarityLimit"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Background/InsertNewReportRow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtrTempReportRow&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_brwChromeBrowser",
+        "out_strProductName",
+        "out_strProductBrand",
+        "out_strProductSeller",
+        "out_strReviewsCount",
+        "out_strProductNormalPrice",
+        "out_strProductSalesPrice",
+        "out_strProductAverageScore",
+        "out_strDiscountRate",
+        "out_strProductOffers",
+        "in_strProductURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Background/CreateRunningReportExcel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strRunningReportPath&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strRunningReportPath",
+        "in_dtReportData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
